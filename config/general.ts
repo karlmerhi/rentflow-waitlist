@@ -1,6 +1,6 @@
 const config = {
     domain: "rentflow.live",
-    title: "Waitlist Page | The Product",
+    title: "RentFlow",
     description: "No more endless emails or messy paperwork. RentFlow helps you vet potential tenants, request essential documents, and finalize leases—all from one clear, intuitive dashboard.",
     subscribeForm: "https://dashboard.mailerlite.com/forms/1234242/140768888861230391/share",
 
