@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="w-11/12 xl:w-[1050px] mx-auto flex md:flex-row flex-col justify-between md:gap-0 gap-12 items-start py-16">
           <div className="flex flex-col gap-2">
             <Image
-              src={"/rentflowlogo.svg"}
+              src={"/RentFlowLogo.svg"}
               width={180}
               height={60}
               alt={config.title}
