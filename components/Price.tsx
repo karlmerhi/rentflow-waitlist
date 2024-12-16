@@ -4,7 +4,7 @@ import config from "@/config/general";
 const Price = () => {
   return (
     <div className="mb-24">
-      <div className="bg-grayBackground rounded-md">
+      {/* <div className="bg-grayBackground rounded-md">
         <div className="w-11/12 xl:w-[1050px] mx-auto py-16">
           <p className="font-light text-2xl text-activeButton text-center">
             {config.contents.price.description}
@@ -31,7 +31,7 @@ const Price = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -13,11 +13,11 @@ const HowWorks = () => {
       <Title label="How it works" />
       <div className="flex xl:flex-row flex-col gap-8 justify-center">
         <Image
-          src="/hero.jpg"
+          src="/rentflow dashboard-2.png"
           alt="hero"
-          width={460}
-          height={330}
-          className="xl:w-[460px] w-full xl:order-1 order-2 rounded-sm h-max"
+          width={4000}
+          height={1946}
+          className="w-full xl:w-[460px] xl:order-1 order-2 rounded-sm h-auto"
         />
         <div className="xl:order-2 order-1 flex flex-col gap-5">
           {config.contents.howWorks.map((item, index) => {

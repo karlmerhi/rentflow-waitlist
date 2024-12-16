@@ -26,7 +26,7 @@ const Hero = () => {
 
   return (
     <section className="xl:flex-row flex-col flex items-center justify-center gap-7 sm:gap-14">
-      <div className="xl:w-5/12 w-11/12 xl:my-40 mt-40 flex flex-col gap-6">
+      <div className="xl:w-5/12 w-11/12 xl:my-40 mt-20 flex flex-col gap-6">
         <h1 className="min-w-[73%] sm:min-w-[300px] xl:min-w-[490px] xl:w-10/12 w-8/12 font-normal text-2xl sm:text-4xl text-black relative z-40">
           {title.text}
           {title.mark && (
@@ -41,10 +41,10 @@ const Hero = () => {
         <Form />
       </div>
       <Image
-        src="/hero.jpg"
+        src="/rentflow_dashboard-1.png"
         alt="hero"
-        width={648}
-        height={500}
+        width={3192}
+        height={1684}
         className="rounded-sm xl:w-6/12 xl:max-w-[648px] w-11/12 h-max"
       />
     </section>
