@@ -25,7 +25,7 @@ const Hero = () => {
   }, [config.contents]);
 
   return (
-    <section className="xl:flex-row flex-col flex items-center justify-center gap-7 sm:gap-14">
+    <section className="flex flex-col xl:flex-row items-center justify-between gap-8 xl:gap-16">
       <div className="xl:w-5/12 w-11/12 xl:my-40 mt-20 flex flex-col gap-6">
         <h1 className="min-w-[73%] sm:min-w-[300px] xl:min-w-[490px] xl:w-10/12 w-8/12 font-normal text-2xl sm:text-4xl text-black relative z-40">
           {title.text}
