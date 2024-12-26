@@ -10,7 +10,6 @@ import Form from "./Form";
 const Hero = () => {
   const title = useMemo(() => {
     const findIndex = config.contents.title.search(config.contents.markOfTitle);
-
     if (findIndex >= 0) {
       return {
         text: config.contents.title.slice(0, findIndex),
@@ -18,26 +17,29 @@ const Hero = () => {
           findIndex,
           findIndex + config.contents.markOfTitle.length
         ),
+        remainder: config.contents.title.slice(
+          findIndex + config.contents.markOfTitle.length
+        ),
       };
     }
-    return { text: config.contents.title, mark: null };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    return { text: config.contents.title, mark: null, remainder: "" };
   }, [config.contents]);
 
   return (
     <section className="flex flex-col xl:flex-row items-center justify-between gap-8 xl:gap-16">
       <div className="xl:w-5/12 w-11/12 xl:my-40 mt-20 flex flex-col gap-6">
-        <h1 className="min-w-[73%] sm:min-w-[300px] xl:min-w-[490px] xl:w-10/12 w-8/12 font-normal text-2xl sm:text-4xl text-black relative z-40">
+        <h1 className="font-normal text-2xl sm:text-4xl text-black">
           {title.text}
           {title.mark && (
-            <span className="bg-primary whitespace-nowrap inline-block ml-1 absolute px-2 w-[fit-content] bottom-[12px] sm:bottom-[12px] leading-[8px] text-black rounded h-2 sm:h-3">
+            <span className="bg-primary px-2 rounded text-black whitespace-nowrap inline-block ml-1">
               {title.mark}
             </span>
           )}
+          {title.remainder}
         </h1>
-        <span className="font-light text-lg sm:text-2xl text-black">
+        <p className="font-light text-lg sm:text-2xl text-black">
           {config.contents.description}
-        </span>
+        </p>
         <Form />
       </div>
       <Image
