@@ -1,105 +1,80 @@
 const config = {
     domain: "rentflow.live",
-    title: "RentFlow",
-    description: "No more endless emails or messy paperwork. RentFlow helps you vet potential tenants, request essential documents, and finalize leases—all from one clear, intuitive dashboard.",
+    title: "RentFlow: Automate & Optimize Your Short-Term Rental Income",
+    description: "Take control of your Airbnb, VRBO, and vacation rentals. Automated guest communication, dynamic pricing, and unified dashboard to maximize your rental profits.",
     subscribeForm: "https://dashboard.mailerlite.com/forms/1234242/140768888861230391/share",
 
-    // socials: {
-    //     twitter: "https://x.com/beratbozkurt0",
-    // },
-
     contents: {
-        title: "Streamline Your Tenant Onboarding Process",
-        markOfTitle: "Tenant Onboarding", // its for marking the title. The text must contain on title. If not, it will be ignored.
-        description: `No more endless emails or messy paperwork. RentFlow helps you vet potential tenants, request essential documents, and finalize leases—all from one clear, intuitive dashboard.`,
+        title: "Turn Your Vacation Rentals into Automated Money-Makers",
+        markOfTitle: "Automated Money-Makers",
+        description: `Stop switching between platforms and drowning in manual tasks. RentFlow brings your bookings, guest messages, and dynamic pricing into one powerful dashboard, helping you earn more while working less.`,
 
-        WaitlistCTA: "Secure your spot for early access and exclusive updates.",
-        WaitlistCTAButton: "Join the Waitlist",
+        WaitlistCTA: "Get Early Access & Founding Member Pricing",
+        WaitlistCTAButton: "Get Started",
 
         about: [
             {
                 id: 1,
-                emoji: "🕵️✅",
-                title: "Seamless Tenant Vetting",
-                description: "Quickly review applications, verify details, and compare candidates effortlessly."
+                emoji: "🤖💰",
+                title: "Smart Dynamic Pricing",
+                description: "Our intelligent algorithm automatically adjusts your rates based on real-time demand, local events, and market data to capture peak profitability."
             },
             {
                 id: 2,
-                emoji: "📋🚀",
-                title: "Fast Document Requests",
-                description: "Prompt applicants for IDs, references, and proof of income—all without leaving the platform."
+                emoji: "💬🤖",
+                title: "Guest Communication on Autopilot",
+                description: "Pre-written, perfectly-timed messages guide guests from booking to checkout. No more late-night replies or missed inquiries."
             },
             {
                 id: 3,
-                emoji: "📋🖊️",
-                title: "Digital Lease Signatures",
-                description: "Close the deal online and eliminate the hassle of paper contracts."
+                emoji: "🏠✨",
+                title: "One Dashboard, All Platforms",
+                description: "Manage Airbnb, VRBO, Booking.com and direct bookings in one place. Sync calendars, rates, and messages across all your listings instantly."
             }
         ],
 
         howWorks: [
             {
-                title: "Review & Compare Applicants",
-                description: "Focus on quality tenants. RentFlow helps you quickly review applications, verify details, and compare candidates effortlessly."
+                title: "Connect Your Properties",
+                description: "Link your Airbnb, VRBO, and other booking platforms with just a few clicks. No technical expertise needed."
             },
             {
-                title: "Request & Upload Documents",
-                description: "Keep everything secure and organized. Request IDs, references, and proof of income—all without leaving the platform."
+                title: "Customize Your Strategy",
+                description: "Set your pricing rules, message templates, and management preferences to match your unique properties and style."
             },
             {
-
-                title: "Send Leases for E-Signature",
-                description: "Finalize agreements with a simple click. RentFlow lets you send digital leases for e-signature, streamlining the entire process."
-            },
+                title: "Watch Your Revenue Grow",
+                description: "Let RentFlow's automation handle the daily tasks while you focus on growing your short-term rental empire."
+            }
         ],
-
-        // price: {
-        //     description: "Unlock endless emoji possibilities with our monthly subscription. Cancel anytime, stress-free!",
-        //     price: "9$",
-
-        //     advantages: ['Cancel anytime.', 'Analyze text emotions for suitable emoji suggestions.', 'Unlimited emoji access: Explore vast library.', 'Bullet points yield perfect results.', 'Ease of use.']
-        // },
 
         faq: [
             {
-                question: "What is The Product?",
-                answer: "RentFlow is a tenant onboarding platform that helps landlords and property managers streamline the application process, request essential documents, and finalize leases online."
+                question: "What makes RentFlow different?",
+                answer: "RentFlow combines powerful automation with simplicity. While other tools overwhelm you with complexity, we focus on what matters: maximizing your income through smart pricing, effortless communication, and seamless platform integration."
             },
             {
-                question: "When Will RentFlow Launch?",
-                answer: "Soon! Sign up for our waitlist to be the first to know when RentFlow is available."
+                question: "Which platforms do you support?",
+                answer: "RentFlow integrates with all major booking platforms including Airbnb, VRBO, Booking.com, and more. Plus, manage direct bookings through your own website or channels."
             },
             {
-                question: "What’s the Cost?",
-                answer: "Early adopters receive special pricing—sign up to find out more when we launch."
+                question: "How does the pricing automation work?",
+                answer: "Our algorithm analyzes real-time market data, local events, seasonal patterns, and competitor rates to automatically set optimal prices for maximum revenue. You set your rules, we handle the rest."
             },
-            // {
-            //     question: "How do I use The Product?",
-            //     answer: "Highlight any text on any website and The Product will automatically will find emoji that match your selection."
-            // },
-            // {
-            //     question: "Is The Product free?",
-            //     answer: "The Product is available as a monthly subscription. You can cancel anytime, stress-free!"
-            // },
-            // {
-            //     question: "Can I customize my emoji suggestions?",
-            //     answer: "Yes! You can personalize your emoji suggestions based on your preferences and writing style."
-            // },
-            // {
-            //     question: "Is The Product available globally?",
-            //     answer: "Yes! The Product is available to users all around the world."
-            // },
-            // {
-            //     question: "How do I cancel my subscription?",
-            //     answer: "You can cancel your subscription anytime. Simply go to your account settings and click 'cancel subscription'."
-            // },
-            // {
-            //     question: "How do I contact support?",
-            //     answer: "You can contact our support team by emailing support@theproduct.com."
-            // }
+            {
+                question: "Is RentFlow right for me?",
+                answer: "Whether you manage one property or twenty, RentFlow scales with your business. Perfect for hosts who want to save time, increase bookings, and maximize their rental income."
+            },
+            {
+                question: "Do I need technical knowledge?",
+                answer: "Not at all! RentFlow is designed to be intuitive and user-friendly. If you can use Airbnb, you can use RentFlow."
+            },
+            {
+                question: "What about pricing?",
+                answer: "We're designing our pricing to be competitive and value-focused. Early access members will receive special founding member benefits and pricing."
+            }
         ]
     }
 }
-
 
 export default config;

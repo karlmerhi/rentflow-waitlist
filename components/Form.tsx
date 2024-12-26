@@ -12,7 +12,7 @@ const Form = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Join Waitlist
+          Get Early Access
         </a>
       </Link>
     </div>
