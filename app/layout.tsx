@@ -1,36 +1,50 @@
-import { Analytics } from "@vercel/analytics/react";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Head from 'next/head';
+// app/layout.tsx
+import './globals.css'
+import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script'
 
-// config
-import config from "@/config/general";
-// components
-import "./globals.css";
+const inter = Inter({ subsets: ['latin'] })
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: config.title,
-  description: config.description,
-};
+export const metadata = {
+  title: 'Rentflow - Waitlist',
+  description: 'Manage your short-term rentals with ease. Waitlist is open!',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <Head>
-        <script>
-          {'!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_g6hys02n7r4r');rdt('track', 'PageVisit');'}
-        </script>
-      </Head>
-      <body className={inter.className + " bg-gray"}>
+      <body className={inter.className}>
         {children}
         <Analytics />
+        <Script
+          id="reddit-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(w,d){
+                if(!w.rdt){
+                  var p=w.rdt=function(){
+                    p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments)
+                  };
+                  p.callQueue=[];
+                  var t=d.createElement("script");
+                  t.src="https://www.redditstatic.com/ads/pixel.js";
+                  t.async=true;
+                  var s=d.getElementsByTagName("script")[0];
+                  s.parentNode.insertBefore(t,s)
+                }
+              }(window,document);
+              rdt('init','a2_g6hys02n7r4r');
+              rdt('track','PageVisit');
+            `,
+          }}
+        />
       </body>
     </html>
-  );
+  )
 }
