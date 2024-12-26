@@ -41,7 +41,7 @@ const Hero = () => {
         <Form />
       </div>
       <Image
-        src="/rentflow_dashboard-1.png"
+        src="/Vacation-2.jpg"
         alt="hero"
         width={3192}
         height={1684}
