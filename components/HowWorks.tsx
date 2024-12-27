@@ -15,8 +15,8 @@ const HowWorks = () => {
         <Image
           src="/Vacation-1.jpg"
           alt="hero"
-          width={4000}
-          height={1946}
+          width={4288}
+          height={2848}
           className="w-full xl:w-[460px] xl:order-1 order-2 rounded-sm h-auto"
         />
         <div className="xl:order-2 order-1 flex flex-col gap-5">

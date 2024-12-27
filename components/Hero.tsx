@@ -43,11 +43,11 @@ const Hero = () => {
         <Form />
       </div>
       <Image
-        src="/Vacation-2.jpg"
+        src="/Property Management.png"
         alt="hero"
-        width={3192}
-        height={1684}
-        className="rounded-sm xl:w-6/12 xl:max-w-[648px] w-11/12 h-max"
+        width={6912}
+        height={3456}
+        className="rounded-sm xl:w-6/12 xl:max-w-[1000px] w-11/12 h-max"
       />
     </section>
   );

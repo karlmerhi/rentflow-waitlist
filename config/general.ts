@@ -1,80 +1,80 @@
 const config = {
     domain: "rentflow.live",
-    title: "RentFlow: Automate & Optimize Your Short-Term Rental Income",
-    description: "Take control of your Airbnb, VRBO, and vacation rentals. Automated guest communication, dynamic pricing, and unified dashboard to maximize your rental profits.",
+    title: "RentFlow: Streamline Your Property Management",
+    description: "The all-in-one platform for landlords to manage tenants, documents, payments and maintenance requests. Save time and reduce hassle with automated workflows.",
     subscribeForm: "https://dashboard.mailerlite.com/forms/1234242/140768888861230391/share",
-
+ 
     contents: {
-        title: "Turn Your Vacation Rentals into Automated Money-Makers",
-        markOfTitle: "Automated Money-Makers",
-        description: `Stop switching between platforms and drowning in manual tasks. RentFlow brings your bookings, guest messages, and dynamic pricing into one powerful dashboard, helping you earn more while working less.`,
-
-        WaitlistCTA: "Get Early Access & Founding Member Pricing",
+        title: "Property Management Made Simple",
+        markOfTitle: "Made Simple",
+        description: `Stop juggling paperwork, payments, and tenant communications. RentFlow brings everything you need into one powerful dashboard, helping you manage properties more efficiently with less effort.`,
+ 
+        WaitlistCTA: "Get Early Access & Founding Member Benefits", 
         WaitlistCTAButton: "Get Started",
-
+ 
         about: [
             {
                 id: 1,
-                emoji: "🤖💰",
-                title: "Smart Dynamic Pricing",
-                description: "Our intelligent algorithm automatically adjusts your rates based on real-time demand, local events, and market data to capture peak profitability."
+                emoji: "📄✨",
+                title: "Document Management",
+                description: "Digitize and organize all your leases, applications, and property documents in one secure place. Access and share instantly when needed."
             },
             {
                 id: 2,
-                emoji: "💬🤖",
-                title: "Guest Communication on Autopilot",
-                description: "Pre-written, perfectly-timed messages guide guests from booking to checkout. No more late-night replies or missed inquiries."
+                emoji: "💰🔄",
+                title: "Automated Rent Collection",
+                description: "Set up automatic rent payments, late fees, and payment reminders. Track payment history and generate financial reports with ease."
             },
             {
                 id: 3,
-                emoji: "🏠✨",
-                title: "One Dashboard, All Platforms",
-                description: "Manage Airbnb, VRBO, Booking.com and direct bookings in one place. Sync calendars, rates, and messages across all your listings instantly."
+                emoji: "🔧📱",
+                title: "Maintenance Made Easy",
+                description: "Tenants can submit maintenance requests through the app. Automatically notify contractors, track progress, and keep everyone updated."
             }
         ],
-
+ 
         howWorks: [
             {
-                title: "Connect Your Properties",
-                description: "Link your Airbnb, VRBO, and other booking platforms with just a few clicks. No technical expertise needed."
+                title: "Add Your Properties",
+                description: "Quickly set up your properties and units. Import existing tenant information and documents in minutes."
             },
             {
-                title: "Customize Your Strategy",
-                description: "Set your pricing rules, message templates, and management preferences to match your unique properties and style."
+                title: "Customize Your Workflows",
+                description: "Set up your preferred payment schedules, maintenance procedures, and communication templates."
             },
             {
-                title: "Watch Your Revenue Grow",
-                description: "Let RentFlow's automation handle the daily tasks while you focus on growing your short-term rental empire."
+                title: "Manage with Ease",
+                description: "Let RentFlow handle the day-to-day tasks while you focus on growing your property portfolio."
             }
         ],
-
+ 
         faq: [
             {
                 question: "What makes RentFlow different?",
-                answer: "RentFlow combines powerful automation with simplicity. While other tools overwhelm you with complexity, we focus on what matters: maximizing your income through smart pricing, effortless communication, and seamless platform integration."
+                answer: "RentFlow combines powerful automation with simplicity. While other property management tools can be overwhelming, we focus on what landlords need most: efficient document management, reliable rent collection, and streamlined maintenance coordination."
             },
             {
-                question: "Which platforms do you support?",
-                answer: "RentFlow integrates with all major booking platforms including Airbnb, VRBO, Booking.com, and more. Plus, manage direct bookings through your own website or channels."
+                question: "What features are included?",
+                answer: "RentFlow handles tenant applications, lease management, rent collection, maintenance requests, financial reporting, and more - all in one integrated platform."
             },
             {
-                question: "How does the pricing automation work?",
-                answer: "Our algorithm analyzes real-time market data, local events, seasonal patterns, and competitor rates to automatically set optimal prices for maximum revenue. You set your rules, we handle the rest."
+                question: "How does the maintenance system work?",
+                answer: "Tenants submit requests through their portal, including photos and descriptions. You can automatically route requests to preferred contractors, track progress, and maintain a complete maintenance history for each property."
             },
             {
                 question: "Is RentFlow right for me?",
-                answer: "Whether you manage one property or twenty, RentFlow scales with your business. Perfect for hosts who want to save time, increase bookings, and maximize their rental income."
+                answer: "Whether you manage a few units or a large portfolio, RentFlow scales with your needs. Perfect for landlords who want to reduce administrative work and manage properties more efficiently."
             },
             {
                 question: "Do I need technical knowledge?",
-                answer: "Not at all! RentFlow is designed to be intuitive and user-friendly. If you can use Airbnb, you can use RentFlow."
+                answer: "Not at all! RentFlow is designed to be intuitive and user-friendly. If you can use email, you can use RentFlow."
             },
             {
                 question: "What about pricing?",
-                answer: "We're designing our pricing to be competitive and value-focused. Early access members will receive special founding member benefits and pricing."
+                answer: "We're designing our pricing to be competitive and value-focused. Early access members will receive exclusive founding member benefits and pricing."
             }
         ]
     }
-}
-
-export default config;
+ }
+ 
+ export default config;
