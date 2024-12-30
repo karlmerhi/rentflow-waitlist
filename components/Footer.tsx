@@ -7,53 +7,22 @@ const Footer = () => {
   return (
     <div className="mb-15 mt-12">
       <div className="bg-grayBackground rounded-md">
-        <div className="w-11/12 xl:w-[1050px] mx-auto flex md:flex-row flex-col justify-between md:gap-0 gap-12 items-start py-16">
-          <div className="flex flex-col gap-2">
-            <Image
-              src={"/RentFlowLogo.svg"}
-              width={180}
-              height={60}
-              alt={config.title}
-            />
-            <p className="w-[300px] text-activeButton">{config.description}</p>
+        <div className="px-5 pt-2 flex justify-between items-center">
+          <Image
+            src="/RentFlowLogo.svg"
+            alt="RentFlow Logo"
+            width={120}
+            height={60}
+          />
+          <div className="flex items-center gap-2">
+            <span>All Rights Reserved.</span>
+            <span>© 2024</span>
+            <Link href="" passHref legacyBehavior>
+              <a target="_blank" className="underline underline-offset-2" rel="noopener noreferrer">
+                RentFlow
+              </a>
+            </Link>
           </div>
-          {/* <div>
-            <span className="uppercase text-[#8d8d8d] font-semibold">
-              Links
-            </span>
-            <ul className="font-medium flex flex-col gap-2 mt-4 text-activeButton">
-              <li>How it works</li>
-              <li>Price</li>
-              <li>FAQ</li>
-              <li>Support</li>
-            </ul>
-          </div> */}
-          <div>
-            <span className="uppercase text-[#8d8d8d] font-semibold">
-              Legal
-            </span>
-            <ul className="font-medium flex flex-col gap-2 mt-4 text-activeButton">
-              <li>Terms of services</li>
-              <li>Privacy policy</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-11/12 xl:w-[1050px] mx-auto pb-16">
-          © 2024{" "}
-          <Link
-            href=""
-            passHref
-            legacyBehavior
-          >
-            <a
-              target="_blank"
-              className="underline underline-offset-2"
-              rel="noopener noreferrer"
-            >
-              RentFlow. All Rights Reserved.
-            </a>
-          </Link>
         </div>
       </div>
     </div>

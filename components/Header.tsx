@@ -4,7 +4,7 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-4 xl:mb-10 bg-white shadow-md">
+    <header className="flex items-center justify-between px-4 pt-4 xl:mb-10 bg-white shadow-md">
       <div className="flex items-center">
         <Image
           src="/RentFlowLogo.svg"

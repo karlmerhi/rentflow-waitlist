@@ -27,11 +27,11 @@ const Hero = () => {
 
   return (
     <section className="flex flex-col xl:flex-row mb-20 items-center justify-between gap-8 xl:gap-16">
-      <div className="xl:w-5/12 w-11/12 xl:my-20 mt-20 flex flex-col gap-6">
+      <div className="xl:w-5/12 w-11/12 xl:my-20 mt-10 xl:mt-20 flex flex-col gap-6">
         <h1 className="font-normal text-2xl sm:text-4xl text-black">
           {title.text}
           {title.mark && (
-            <span className="bg-primary px-2 rounded text-black whitespace-nowrap inline-block ml-0 ">
+            <span className="underline text-[#323832] whitespace-nowrap inline-block ml-0 animate-pulse">
               {title.mark}
             </span>
           )}
