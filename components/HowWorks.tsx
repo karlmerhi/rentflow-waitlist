@@ -21,7 +21,6 @@ const HowWorks = () => {
                   </h4>
                   {/* Using SVG for the arrow */}
                   <svg
-                    alt="RentFlow Logo"
                     width="12"
                     height="6"
                     viewBox="0 0 12 6"
