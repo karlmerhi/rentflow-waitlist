@@ -5,7 +5,7 @@ const config = {
     subscribeForm: "https://dashboard.mailerlite.com/forms/1234242/140768888861230391/share",
  
     contents: {
-        title: "Property Management Made Simple",
+        title: "Tenant Management Made Simple",
         markOfTitle: "Made Simple",
         description: `Stop juggling paperwork, payments, and tenant communications. RentFlow brings everything you need into one powerful dashboard, helping you manage properties more efficiently with less effort.`,
  

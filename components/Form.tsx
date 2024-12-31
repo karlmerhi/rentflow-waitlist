@@ -12,7 +12,7 @@ const Form = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Get Early Access
+          Get Access
         </a>
       </Link>
     </div>

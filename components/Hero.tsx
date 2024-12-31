@@ -2,9 +2,7 @@
 
 import { useMemo } from "react";
 import Image from "next/image";
-// config
 import config from "@/config/general";
-// components
 import Form from "./Form";
 
 const Hero = () => {
@@ -23,32 +21,38 @@ const Hero = () => {
       };
     }
     return { text: config.contents.title, mark: null, remainder: "" };
-  }, [config.contents]);
+  }, []);
 
   return (
-    <section className="flex flex-col xl:flex-row mb-20 items-center justify-between gap-8 xl:gap-16">
-      <div className="xl:w-5/12 w-11/12 xl:my-20 mt-10 xl:mt-20 flex flex-col gap-6">
-        <h1 className="font-normal text-2xl sm:text-4xl text-black">
-          {title.text}
-          {title.mark && (
-            <span className="underline text-[#323832] whitespace-nowrap inline-block ml-0 animate-pulse">
-              {title.mark}
-            </span>
-          )}
-          {title.remainder}
-        </h1>
-        <p className="font-light text-lg sm:text-2xl text-black">
-          {config.contents.description}
-        </p>
-        <Form />
-      </div>
+    <section className="relative w-full h-[500px] mb-20">
+      {/* Background image */}
       <Image
-        src="/Property Management.png"
+        src="/home.jpg"
         alt="hero"
-        width={6912}
-        height={3456}
-        className="rounded-sm xl:w-6/12 xl:max-w-[1000px] w-11/12 h-max"
+        fill
+        className="object-cover rounded-sm"
       />
+
+      {/* Overlay text container */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center bg-white/50">
+        <div className="w-full lg:w-1/2">
+          <h1 className="font-semibold text-3xl sm:text-5xl text-black mb-4">
+            {title.text}
+            {title.mark && (
+              <span className="underline text-[#323832] whitespace-nowrap inline-block ml-0 animate-pulse">
+                {title.mark}
+              </span>
+            )}
+            {title.remainder}
+          </h1>
+          <p className=" text-xl sm:text-3xl text-black">
+            {config.contents.description}
+          </p>
+          <div className="mt-4">
+            <Form />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
